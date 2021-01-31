@@ -1,2 +1,28 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="container">
+	<div class="row">
+			
+			<div class="col-md-12">
+				<h1>
+					User Page
+				</h1><br>
+			</div>
+			
+			<div class="col-md-12">
+				
+				<p class="image_alignment img-circle">
+					<%= image_tag(@user.image.url(:thumb), alt: 'Avatar_Image') if @user.image? %>		
+				</p>
+
+				<h3>
+					<%= @user.patronymic %>
+					<%= @user.name %>
+				</h3>
+
+				<p class="link_alignment">
+					<%= link_to 'Изменить', edit_user_registration_path, class: "btn btn-success" %>
+				</p>
+
+			</div>	
+	
+	</div>
+</div>
