@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20210130162210) do
     t.string   "name"
     t.string   "patronymic"
     t.string   "surname"
-    t.string   "avatar"
+    t.string   "image"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
