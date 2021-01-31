@@ -25,7 +25,9 @@
       Hello <%= current_user.username %> | <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, data: { confirm: 'Вы уверенны что хотите выйти?' } %>
     <% else %>
       <%= link_to 'Sign In', new_user_session_path %>
-    <% end %>
+    <% end %> |
+
+    <%= link_to 'New Gallery', new_user_image_path %>
 
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
