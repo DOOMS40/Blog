@@ -1,2 +1,22 @@
-<h1>UserImages#show</h1>
-<p>Find me in app/views/user_images/show.html.erb</p>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>
+			  Gallery
+			</h1>
+		</div>
+
+		<div class="col-md-12">
+			<% @user_images.each do |user_element| %>
+				<p>
+					<%= user_element.description %>
+				</p>
+
+				<p>
+					<%= image_tag(user_element.image.url(:medium), alt: 'Image') unless user_element.image.blank? %>
+				</p>
+			<% end %>
+		</div>
+
+	</div>
+</div>
