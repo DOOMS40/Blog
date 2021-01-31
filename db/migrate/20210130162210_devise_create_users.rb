@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :patronymic
       t.string :surname
-      t.string :avatar
+      t.string :image
        
 
       ## Recoverable
