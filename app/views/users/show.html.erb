@@ -6,6 +6,13 @@
 					User Page
 				</h1><br>
 			</div>
+
+			<div class="navbar navbar-right col-md-5">
+				<%= form_tag(controller: "searches", action: "search", method: "get", class: "nifty_form") do  %>
+					<%= text_field_tag(:user)  %>
+					<%= submit_tag("Поиск",class: "btn btn-success") %>
+				<% end %>	
+			</div>
 			
 			<div class="col-md-12">
 				
@@ -22,7 +29,10 @@
 					<%= link_to 'Изменить', edit_user_registration_path, class: "btn btn-success" %>
 				</p>
 
-			</div>	
+			</div>
 	
 	</div>
 </div>
+
+
+
