@@ -2,7 +2,7 @@
 	<div class="row">
 			
 			<div class="col-md-12">
-				<h1>
+				<h1 class="color_header text-center">
 					Моя Страница
 				</h1><br>
 			</div>
@@ -20,7 +20,7 @@
 					<%= image_tag(@user.image.url(:thumb), alt: 'Avatar_Image') if @user.image? %>		
 				</p>
 
-				<h3>
+				<h3 class="color_header">
 					<%= @user.patronymic %>
 					<%= @user.name %>
 				</h3>
@@ -32,7 +32,7 @@
 			</div>
 
 			<div class="col-md-12">
-				<h2>
+				<h2 class="color_header">
 					Галлерея
 				</h2>
 			</div>

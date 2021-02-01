@@ -7,4 +7,13 @@
 
 .link_alignment {
 	margin-left: 6%;
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */ 
+}
+
+.container {
+	background-color: rgb(51, 102, 255);
+}
+
+.color_header {
+	color:  rgb(235, 235, 224);
 }
