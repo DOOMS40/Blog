@@ -32,9 +32,18 @@
 			</div>
 
 			<div class="col-md-12">
+				
 				<h2 class="color_header">
 					Галлерея
 				</h2>
+
+				<% @user.user_images.each do |user_element| %>
+					<p>
+						<%= image_tag(user_element.image.url(:medium), alt: 'Image') unless user_element.image.blank? %><br>
+						<%= user_element.description %>	
+					</p>
+				<% end %>
+
 			</div>
 	
 	</div>
