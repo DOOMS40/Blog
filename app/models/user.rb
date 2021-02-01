@@ -7,4 +7,11 @@ class User < ApplicationRecord
   has_many :user_images
   has_many :friendships
   has_many :searches
+  has_many :comments
+
+  validates :name, presence: true, length: { minimum: 3 }
+  validates :patronymic, presence: true, length: { minimum: 3 }
+  validates :surname, presence: true, length: { minimum: 3 }
+  validates :username, presence: true, length: { minimum: 3 }
+  validates :image, presence: true
 end
