@@ -32,9 +32,17 @@
 			</div>
 
 			<div class="col-md-12">
+				
 				<h2 class="color_header">
 					Галлерея
 				</h2>
+
+				<% @user.user_images do |element_image| %>
+					<p>
+						<%= link_to image_tag(element.image.url(:medium), alt: 'Image') unless element.image.blank? %><br>
+						<%= element_image.description %>
+					</p>
+				<% end %>
 			</div>
 	
 	</div>
