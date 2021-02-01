@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'comments/show'
+
+  get 'comments/new'
+
+  get 'comments/create'
+
   get 'searches/search'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
